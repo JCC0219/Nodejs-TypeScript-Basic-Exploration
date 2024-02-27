@@ -7,7 +7,10 @@ const buttonElement = document.querySelector("button"); // typescript can aauto 
 const numResult: number[] = [];
 const textResult: string[] = [];
 
-function add(num1: number | string, num2: number | string) {
+type NumOrString = number | string;
+type Result = { val: number; timestamp: Date };
+
+function add(num1: NumOrString, num2: NumOrString) {
   if (typeof num1 === "number" && typeof num2 === "number") {
     return num1 + num2;
   } else if (typeof num1 === "string" && typeof num2 === "string") {
@@ -17,7 +20,7 @@ function add(num1: number | string, num2: number | string) {
   }
 }
 
-function printResult(resultObj: { val: number; timestamp: Date }) {
+function printResult(resultObj: Result) {
   console.log(resultObj.val);
 }
 
