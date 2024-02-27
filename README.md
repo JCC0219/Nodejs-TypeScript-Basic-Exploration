@@ -1,4 +1,6 @@
 # Nodejs-TypeScript-Basic-Exploration
+This branch is showing on how to configure simple working app with expressjs using typescript
+
 
 ## Table of Contents
 - [**To setup and run**](#to-setup-and-run-the-current-basic-typscript-application)
@@ -10,12 +12,4 @@
 ```bash
 npm install -g typescript
 ```
-3. To add config file :
-```bash
-tsc --init
-```
-4. Run `tsc app.ts` to compile the TypeScript file `app.ts` into JavaScript. This will generate an `app.js` file.
-```bash
-tsc app.ts
-```
-5. Open `index.html` in a browser to see the application in action.
+3. Download all the package dependencies, run `npm install`.
