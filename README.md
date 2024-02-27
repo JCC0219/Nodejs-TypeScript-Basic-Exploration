@@ -10,8 +10,12 @@
 ```bash
 npm install -g typescript
 ```
-3. Run `tsc app.ts` to compile the TypeScript file `app.ts` into JavaScript. This will generate an `app.js` file.
+3. To add config file :
+```bash
+tsc --init
+```
+4. Run `tsc app.ts` to compile the TypeScript file `app.ts` into JavaScript. This will generate an `app.js` file.
 ```bash
 tsc app.ts
 ```
-4. Open `index.html` in a browser to see the application in action.
+5. Open `index.html` in a browser to see the application in action.
