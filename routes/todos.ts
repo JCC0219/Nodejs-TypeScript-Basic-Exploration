@@ -5,10 +5,9 @@ import { Todo } from "../models/todo";
 let todos: Todo[] = [];
 
 const router = Router();
-
 //GET
 router.get("/", (req, res, next) => {
-  res.status(200).json({ todos: todos });
+  return res.status(200).json({ todos: todos });
 });
 
 //CREATE
