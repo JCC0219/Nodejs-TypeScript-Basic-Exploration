@@ -7,6 +7,8 @@ This branch is showing on how to configure simple REST API that build with node,
 
 - [**More Explanation**](#more-explanation)
 
+= [**Extras TS Project**]
+
 
 ## To setup and run the current basic typscript application
 1. **Clone the repository to your local machine.**
@@ -84,5 +86,29 @@ let inputLength = (userInput as string).length; // Type assertion
 ```js
 let message = "Hello, TypeScript!"; // TypeScript infers message as type string
 ```
+
+## Extras Explanation on TS Project
+
+1. Activate the tsconfig.json: To activate the tsconfig.json file, run
+```bash
+tsc --init
+```
+2. Here's a basic explanation for each of the configuration options in `tsconfig.json` file:
+
+`"module": "Node16"`: Specifies the module system to use when generating JavaScript code. In this case, it is set to Node16, indicating compatibility with Node.js version 16 and its module system.
+
+`"moduleResolution": "Node16"`: Specifies how TypeScript should resolve node_module imports. Setting it to Node16 indicates that TypeScript should use Node.js's module resolution strategy.
+
+`"rootDir": "./src"`: Specifies the root directory of TypeScript source files. TypeScript will only compile files within this directory and its subdirectories.
+
+`"outDir": "./dist"`: Specifies the output directory for compiled JavaScript files. After compilation, TypeScript will place the generated JavaScript files in this directory.
+
+`"strict"`: true: Enables strict type-checking options in TypeScript. This setting helps catch common programming errors and promotes writing more robust code.
+
+These configurations help ensure that your TypeScript project is configured to best practices structure.
+
+
+
+
 
 
